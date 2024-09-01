@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior:smooth;
+}
+.h2head{
+    text-align:center;
+    font-size:20px;
+    text-transform:uppercase;
+    font-family:fantasy;
+    letter-spacing:2px;
+    color:#9b9a9a;
+    /* background-color:blue; */
+}
+ul{
+    list-style-type:none;
+    height:fit-content;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+/* ================================= */
+.parnt{
+    padding:0px 100px;
+    background-color:black;
+    overflow-y:auto;
+  }
+
+.container{
+    background-image:url('bit.png');
+    height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:5px;
+    
+}
+.container #home{
+    height:100%;
+    box-shadow:rgb(41, 41, 41) 0px 0px 10px 5px ;
+
+}
+.container .navpar{
+    display:flex;
+    justify-content:space-between;
+    text-transform:uppercase;
+    height:60px;
+    padding:22px;
+    position:fixed;
+    width:1144px;
+    background-color:#0b083ad2;
+    margin-left:-2px;
+
+}
+
+.container .navpar .logo::after{
+    content:'';
+    position:absolute;
+    width:calc(50% - 60px);
+    height:3px;
+    bottom:-2px;
+    left:0px;
+    transition-duration:0.4s;
+    transition-delay:0.1s;
+    transition-timing-function:ease-in-out;
+    border-left:solid 65px #ffffff;
+    background-color:#9b9a9a;
+    
+}
+.container .navpar .logo:hover::after{
+    width:calc(99% - 60px);
+    transition-duration:0.4s;
+    transition-timing-function:linear;
+    background-color:white;
+    border-left:solid 65px #ffffff;
+    box-shadow:rgb(255, 255, 255) 0px 0px 10px 5px ;
+
+} 
+.logo{
+    transition:0.4s;
+    transition-delay:0.1s;
+    transition-timing-function:ease-in-out;
+    padding-left:5px;
+    color: #9b9a9a;
+    position:relative;
+    text-shadow:rgb(255, 255, 255) -1px 1px 1px ;
+    height:fit-content;
+
+}
+.logo:hover{
+    padding-left:495px;
+    transition-duration:0.9s;
+    transition-timing-function:linear;
+    color:white;
+
+
+
+}
+.logo:hover + ul{
+    background-color:white;
+    transition-delay:1s;
+    box-shadow:rgb(255, 255, 255) 0px 0px 10px 5px ;
+}
+.navpar:hover{
+    box-shadow:rgba(255, 255, 255, 0.144) 3px 3px 44px 3px ;
+}
+
+.container .navpar .logo::before{
+    content:'';
+    border-left:solid 3px #ffffff;
+    position:absolute;
+    height:20px;
+    top:0px;
+    bottom:80px;
+    left:0px;
+    transition-delay:0.4s;
+}
+.container .navpar .logo:hover::before{
+    border-left: solid #ffffff 65px;
+    transition:0.6s;
+    box-shadow:rgb(255, 255, 255) 0px 0px 10px 5px ;
+    height:20px;
+}
+/*===================logo end================== */
+/* ==================home start================ */
+.container .navpar ul{
+    display:flex;
+    justify-content:space-evenly;
+    width:50%; 
+}
+.container .navpar ul li{
+    font-family:fantasy;
+    padding:1px 4px;
+    height:fit-content;
+    transition:0.3s;
+    position:relative;
+    background-color:#9b9a9a;
+    border-radius:6px;
+    width:80px;
+    text-align:center;
+    
+}
+.container .navpar ul li:hover{
+    background-color:#cfcdcd;
+    transition:0.3s;
+    box-shadow:rgb(255, 255, 255) 0px 0px 10px 5px ;
+       
+}
+li:hover a{
+    color:#000000;
+}
+/* ==============home end======================== */
+/* ==============portfolio start================= */
+#portfolio img{
+    width:150px;
+}
+#portfolio .por-content .content{
+    padding:20px;
+    display:flex;
+    margin:0px 10px;
+}
+#portfolio .por-content .content:hover{
+    background-color:rgba(50, 50, 51, 0.63);
+    box-shadow:rgb(41, 41, 41) 0px 0px 10px 5px ;
+}
+#portfolio .por-content .content .text{
+    display:flex;
+    flex-direction:column;
+    padding-left:30px;
+    color:white;
+    font-family:cursive;
+    letter-spacing:2px;
+}
+#portfolio .por-content .content .text p{
+    padding-top:10px;
+    
+}
+#portfolio .por-content .content .text h3{
+    color:#9b9a9a;
+    font-family:serif;
+    font-size:20px;
+}
+#portfolio{
+    height:100%;
+    margin-bottom:10px;
+}
+#portfolio .por-content{
+    padding:45px 0px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:33px;
+    box-shadow:rgb(41, 41, 41) 0px 0px 10px 5px ;
+}
+/* =================portfolio end================ */
+/* ================about start=================== */
+#about .ab-content .content img{
+    width:300px;
+}
+#about p{
+    color:#9b9a9a;
+    padding-left:2px;
+    word-spacing:2px;
+    font-family:Impact, Haettenschweiler, 'Arial';
+    font-size:14px;
+}
+#about{
+    box-shadow:rgb(41, 41, 41) 0px 0px 10px 5px ;
+    height:100vh;
+    padding:10px;
+}
+#about .ab-content .content{
+    display:grid;
+    grid-template-columns:1fr 300px 1fr;
+    
+}
+.texttow{
+    margin:-5px 0px 0px;
+}
+/* =============================end about======================= */
+/* ==============================start contact================== */
+#contact .con-content img{
+    width:140px;
+    border-radius:50%;
+}
+#contact .con-content .content h2{
+    text-align:center;
+    font-family:cursive;
+    font-size:80px;
+    color:#9b9a9a;
+}
+#contact .con-content .content .text{
+    display:grid;
+    grid-template-columns:150px 300px;
+    padding:20px;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    background-color:#9b9a9a;
+    box-shadow:rgb(105, 105, 105) 0px 0px 10px 5px ;
+}
+#contact .con-content .content .text h4{
+    font-size:20px;
+    font-family:cursive;
+    color:black;
+    padding:5px;
+    border-radius:5px;
+    width:fit-content;
+}
+#contact{
+    height:100vh;
+}
+#contact .con-content .content .text p{
+    border-radius:5px;
+    padding:5px;
+    width:fit-content;
+    color:white;
+    font-family:fantasy;
+    letter-spacing:2px;
+}
+/* ==========================contact end======================= */
+/* ==========================footer start======================= */
+.footer p{
+    background-color:#9b9a9a;
+    font-size:20px;
+    padding: 10px 0px;
+    text-align:center;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    box-shadow:rgb(105, 105, 105) 0px 0px 10px 5px ;
+}
